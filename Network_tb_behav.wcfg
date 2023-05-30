@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Network_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Network_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3996526400fs"></ZoomStartTime>
+      <ZoomEndTime time="4219926401fs"></ZoomEndTime>
+      <Cursor1Time time="3630000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/Network_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3" type="array">
+      <obj_property name="ElementShortName">o3[19:0]</obj_property>
+      <obj_property name="ObjectShortName">o3[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus700" type="vbus">
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node3/Router_0/o3[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node2/in1" type="array">
+      <obj_property name="ElementShortName">in1[19:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node2/o3" type="array">
+      <obj_property name="ElementShortName">o3[19:0]</obj_property>
+      <obj_property name="ObjectShortName">o3[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/in1" type="array">
+      <obj_property name="ElementShortName">in1[19:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/vi1" type="logic">
+      <obj_property name="ElementShortName">vi1</obj_property>
+      <obj_property name="ObjectShortName">vi1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/Router_0/in_RC[0]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0][22:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][22:0]</obj_property>
+      <obj_property name="label">in RC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/Router_0/valid_RC[0]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+      <obj_property name="label">valid RC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/Router_0/\U2[0].IB /state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/Router_0/VCA/targ1" type="array">
+      <obj_property name="ElementShortName">targ1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">targ1[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/Router_0/VCA/cred3" type="logic">
+      <obj_property name="ElementShortName">cred3</obj_property>
+      <obj_property name="ObjectShortName">cred3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/Router_0/VCA/count3" type="array">
+      <obj_property name="ElementShortName">count3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">count3[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node0/Router_0/\U2[0].IB /state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node0/PE/datain_buffer/douta" type="array">
+      <obj_property name="ElementShortName">douta[19:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node0/PE/datain_buffer/state" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">Node0 state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/state" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+      <obj_property name="label">Node1 state</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node0/PE/reeeaaad" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reeeaaad[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reeeaaad[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">Node0 data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node5/Router_0/\U2[0].IB /state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus58" type="vbus">
+      <obj_property name="label">Node1 data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Network_tb/NoC/node1/PE/datain_buffer/douta[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/Network_tb/NoC/node5/Router_0/\U2[0].IB /fifo" type="array">
+      <obj_property name="ElementShortName">fifo[3:0][22:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo[3:0][22:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

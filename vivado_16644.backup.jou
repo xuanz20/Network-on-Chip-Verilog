@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep  9 03:55:46 2022
+# Process ID: 16644
+# Current directory: C:/Users/DELL/Desktop/NoC on FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18772 C:\Users\DELL\Desktop\NoC on FPGA\NoC.xpr
+# Log file: C:/Users/DELL/Desktop/NoC on FPGA/vivado.log
+# Journal file: C:/Users/DELL/Desktop/NoC on FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/DELL/Desktop/NoC on FPGA/NoC.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/DELL/Desktop/NoC on FPGA/Network_tb_behav.wcfg}
+source Network_tb.tcl
+current_wave_config {Network_tb_behav.wcfg}
+remove_forces { {/Network_tb/i} {/Network_tb/fout0} {/Network_tb/fout1} {/Network_tb/fout2} {/Network_tb/fout3} {/Network_tb/fout4} {/Network_tb/fout5} {/Network_tb/fout6} {/Network_tb/fout7} {/Network_tb/fout8} {/Network_tb/fout9} {/Network_tb/fout10} {/Network_tb/fout11} {/Network_tb/fout12} {/Network_tb/fout13} {/Network_tb/fout14} {/Network_tb/fout15} {/Network_tb/my_result} }
+run all
+relaunch_sim
+run all
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+open_run impl_1
+report_utilization -name utilization_1
+save_wave_config {C:/Users/DELL/Desktop/NoC on FPGA/Network_tb_behav.wcfg}
+close_sim

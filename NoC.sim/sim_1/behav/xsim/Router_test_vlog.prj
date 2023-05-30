@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../NoC.srcs/sources_1/imports/design/Control.v" \
+"../../../../NoC.srcs/sources_1/imports/design/Crossbar.v" \
+"../../../../NoC.srcs/sources_1/imports/design/InputBuffer.v" \
+"../../../../NoC.srcs/sources_1/imports/design/RouteCompute.v" \
+"../../../../NoC.srcs/sources_1/imports/design/Router.v" \
+"../../../../NoC.srcs/sources_1/imports/design/SwitchAlloc.v" \
+"../../../../NoC.srcs/sources_1/imports/design/VCAlloc.v" \
+"../../../../NoC.srcs/sim_1/imports/testbench/Router_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

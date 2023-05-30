@@ -1,0 +1,1 @@
+-wto "20cb4b48d3194ebf88c0eb2e5e0a832e" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Router_test_behav" "xil_defaultlib.Router_test" "xil_defaultlib.glbl" -log "elaborate.log" 

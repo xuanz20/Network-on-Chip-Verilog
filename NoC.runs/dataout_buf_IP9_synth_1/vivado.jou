@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep  7 17:20:27 2022
+# Process ID: 4252
+# Current directory: C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/dataout_buf_IP9_synth_1
+# Command line: vivado.exe -log dataout_buf_IP9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dataout_buf_IP9.tcl
+# Log file: C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/dataout_buf_IP9_synth_1/dataout_buf_IP9.vds
+# Journal file: C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/dataout_buf_IP9_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dataout_buf_IP9.tcl -notrace

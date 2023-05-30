@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep  7 17:41:30 2022
+# Process ID: 20412
+# Current directory: C:/Users/DELL/Desktop/NoC on FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12380 C:\Users\DELL\Desktop\NoC on FPGA\NoC.xpr
+# Log file: C:/Users/DELL/Desktop/NoC on FPGA/vivado.log
+# Journal file: C:/Users/DELL/Desktop/NoC on FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/DELL/Desktop/NoC on FPGA/NoC.xpr}
+update_compile_order -fileset sources_1
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir {c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip}
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {16} CONFIG.C_NUM_OF_PROBES {2}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/ila_0/ila_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+launch_runs -jobs 4 ila_0_synth_1
+export_simulation -of_objects [get_files {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/ila_0/ila_0.xci}}] -directory {C:/Users/DELL/Desktop/NoC on FPGA/NoC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/NoC on FPGA/NoC.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/NoC on FPGA/NoC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -norecurse {{C:/Users/DELL/Desktop/NoC on FPGA/design/datain_buf_0.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+create_clock -period 20.000 -name clk -waveform {0.000 10.000}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir {c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip}
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.PRIM_IN_FREQ {200.000} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {150.000} CONFIG.CLKIN1_JITTER_PS {50.0} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKIN1_PERIOD {5.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6} CONFIG.CLKOUT1_JITTER {126.399} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+generate_target all [get_files  {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+launch_runs -jobs 8 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files {{c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -directory {C:/Users/DELL/Desktop/NoC on FPGA/NoC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/NoC on FPGA/NoC.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/NoC on FPGA/NoC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/NoC on FPGA/NoC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/impl_1/Network_FPGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila"}]]
+save_wave_config {C:/Users/DELL/Desktop/NoC on FPGA/NoC.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

@@ -1,0 +1,1860 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep  7 19:04:31 2022
+# Process ID: 13904
+# Current directory: C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1
+# Command line: vivado.exe -log Network_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Network_FPGA.tcl
+# Log file: C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/Network_FPGA.vds
+# Journal file: C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Network_FPGA.tcl -notrace
+Command: synth_design -top Network_FPGA -part xc7a100tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15592 
+WARNING: [Synth 8-976] state has already been declared [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:16]
+WARNING: [Synth 8-2654] second declaration of state ignored [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:16]
+INFO: [Synth 8-994] state is declared here [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:8]
+WARNING: [Synth 8-976] reeeaaad has already been declared [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:17]
+WARNING: [Synth 8-2654] second declaration of reeeaaad ignored [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:17]
+INFO: [Synth 8-994] reeeaaad is declared here [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:9]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 762.766 ; gain = 187.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Network_FPGA' [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Network' [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Node0' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Router' [C:/Users/DELL/Desktop/NoC on FPGA/design/Router.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RouteCompute' [C:/Users/DELL/Desktop/NoC on FPGA/design/RouteCompute.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RouteCompute' (3#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/RouteCompute.v:1]
+INFO: [Synth 8-6157] synthesizing module 'InputBuffer' [C:/Users/DELL/Desktop/NoC on FPGA/design/InputBuffer.v:1]
+	Parameter WRONG bound to: 3'b000 
+INFO: [Synth 8-6155] done synthesizing module 'InputBuffer' (4#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/InputBuffer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VCAlloc' [C:/Users/DELL/Desktop/NoC on FPGA/design/VCAlloc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'VCAlloc' (5#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/VCAlloc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SwitchAlloc' [C:/Users/DELL/Desktop/NoC on FPGA/design/SwitchAlloc.v:21]
+WARNING: [Synth 8-5856] 3D RAM prio_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'SwitchAlloc' (6#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/SwitchAlloc.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Control' [C:/Users/DELL/Desktop/NoC on FPGA/design/Control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (7#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Crossbar' [C:/Users/DELL/Desktop/NoC on FPGA/design/Crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Crossbar' (8#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Crossbar.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Router' (9#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Router.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement0' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_0' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP0' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP0' (10#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_0' (11#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datain_buf_0' [C:/Users/DELL/Desktop/NoC on FPGA/design/datain_buf_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datain_buf_IP' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/datain_buf_IP_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'datain_buf_IP' (12#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/datain_buf_IP_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'datain_buf_0' (13#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/datain_buf_0.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement0' (14#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement0.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node0' (15#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node1' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement1' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_1' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP1' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP1' (16#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_1' (17#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_1.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement1.v:70]
+INFO: [Synth 8-6157] synthesizing module 'datain_buf' [C:/Users/DELL/Desktop/NoC on FPGA/design/datain_buf.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datain_buf' (18#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/datain_buf.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement1' (19#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node1' (20#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node2' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement2' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_2' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP2' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP2' (21#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_2' (22#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_2.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement2.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement2' (23#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node2' (24#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node3' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement3' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_3' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP3' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP3' (25#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_3' (26#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_3.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement3.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement3' (27#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node3' (28#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node4' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement4' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_4' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP4' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP4' (29#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_4' (30#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_4.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement4.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement4' (31#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node4' (32#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node5' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement5' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_5' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP5' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP5' (33#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_5' (34#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_5.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement5.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement5' (35#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node5' (36#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node6' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement6' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_6' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP6' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP6' (37#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_6' (38#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_6.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement6.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement6' (39#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement6.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node6' (40#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node7' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement7' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_7' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP7' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP7' (41#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_7' (42#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_7.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement7.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement7' (43#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement7.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node7' (44#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node8' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement8' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_8' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP8' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP8' (45#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_8' (46#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_8.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement8.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement8' (47#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node8' (48#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node9' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement9' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_9' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP9' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP9' (49#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_9' (50#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_9.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement9.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement9' (51#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement9.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node9' (52#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node10' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node10.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement10' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement10.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_10' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_10.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP10' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP10' (53#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_10' (54#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_10.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement10.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement10' (55#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement10.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node10' (56#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node10.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node11' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node11.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement11' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement11.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_11' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_11.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP11' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP11' (57#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_11' (58#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_11.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement11.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement11' (59#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement11.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node11' (60#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node11.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node12' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node12.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement12' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement12.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_12' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_12.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP12' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP12' (61#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_12' (62#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_12.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement12.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement12' (63#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement12.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node12' (64#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node12.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node13' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node13.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement13' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement13.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_13' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_13.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP13' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP13_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP13' (65#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP13_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_13' (66#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_13.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement13.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement13' (67#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement13.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node13' (68#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node13.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node14' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node14.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement14' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement14.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_14' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_14.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP14' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP14_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP14' (69#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP14_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_14' (70#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_14.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement14.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement14' (71#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement14.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node14' (72#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node14.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Node15' [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node15.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorElement15' [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement15.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_15' [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_15.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataout_buf_IP15' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP15_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_IP15' (73#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/dataout_buf_IP15_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataout_buf_15' (74#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/dataout_buf/dataout_buf_15.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement15.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorElement15' (75#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/ProcessorElement/ProcessorElement15.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Node15' (76#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Node/Node15.v:23]
+WARNING: [Synth 8-3848] Net wd96_0 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wd99_0 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv96_0 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wv99_0 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc96_0 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wc99_0 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wd97_1 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv97_1 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc97_1 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wd98_2 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv98_2 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc98_2 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wd99_3 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv99_3 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc99_3 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wd16_12 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv16_12 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc16_12 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wd17_13 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv17_13 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc17_13 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wd18_14 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv18_14 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc18_14 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wd16_15 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wd19_15 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:8]
+WARNING: [Synth 8-3848] Net wv16_15 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wv19_15 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:9]
+WARNING: [Synth 8-3848] Net wc16_15 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+WARNING: [Synth 8-3848] Net wc19_15 in module/entity Network does not have driver. [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Network' (77#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/Network.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (78#1) [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/.Xil/Vivado-13904-Jeff/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'net'. This will prevent further optimization [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:34]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'Network_FPGA' (79#1) [C:/Users/DELL/Desktop/NoC on FPGA/design/NetworkOnFpga.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 821.508 ; gain = 245.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 821.508 ; gain = 245.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 821.508 ; gain = 245.922
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node0/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node0/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node1/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node1/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node2/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node2/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node3/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node3/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node4/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node4/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node5/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node5/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node6/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node6/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node7/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node7/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node8/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node8/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node9/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node9/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node10/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node10/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node11/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node11/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node12/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node12/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node13/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node13/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node14/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node14/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node15/PE/datain_buffer/datain_buf_0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/datain_buf_IP/datain_buf_IP/dataout_buf_IP_in_context.xdc] for cell 'net/node15/PE/datain_buffer/datain_buf_0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP15/dataout_buf_IP15/dataout_buf_IP15_in_context.xdc] for cell 'net/node15/PE/dataout_buffer/dataout_buf_IP15'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP15/dataout_buf_IP15/dataout_buf_IP15_in_context.xdc] for cell 'net/node15/PE/dataout_buffer/dataout_buf_IP15'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP1/dataout_buf_IP1/dataout_buf_IP1_in_context.xdc] for cell 'net/node1/PE/dataout_buffer/dataout_buf_IP1'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP1/dataout_buf_IP1/dataout_buf_IP1_in_context.xdc] for cell 'net/node1/PE/dataout_buffer/dataout_buf_IP1'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP2/dataout_buf_IP2/dataout_buf_IP2_in_context.xdc] for cell 'net/node2/PE/dataout_buffer/dataout_buf_IP2'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP2/dataout_buf_IP2/dataout_buf_IP2_in_context.xdc] for cell 'net/node2/PE/dataout_buffer/dataout_buf_IP2'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP3/dataout_buf_IP3/dataout_buf_IP3_in_context.xdc] for cell 'net/node3/PE/dataout_buffer/dataout_buf_IP3'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP3/dataout_buf_IP3/dataout_buf_IP3_in_context.xdc] for cell 'net/node3/PE/dataout_buffer/dataout_buf_IP3'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP4/dataout_buf_IP4/dataout_buf_IP4_in_context.xdc] for cell 'net/node4/PE/dataout_buffer/dataout_buf_IP4'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP4/dataout_buf_IP4/dataout_buf_IP4_in_context.xdc] for cell 'net/node4/PE/dataout_buffer/dataout_buf_IP4'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP5/dataout_buf_IP5/dataout_buf_IP5_in_context.xdc] for cell 'net/node5/PE/dataout_buffer/dataout_buf_IP5'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP5/dataout_buf_IP5/dataout_buf_IP5_in_context.xdc] for cell 'net/node5/PE/dataout_buffer/dataout_buf_IP5'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP6/dataout_buf_IP6/dataout_buf_IP6_in_context.xdc] for cell 'net/node6/PE/dataout_buffer/dataout_buf_IP6'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP6/dataout_buf_IP6/dataout_buf_IP6_in_context.xdc] for cell 'net/node6/PE/dataout_buffer/dataout_buf_IP6'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP8/dataout_buf_IP8/dataout_buf_IP8_in_context.xdc] for cell 'net/node8/PE/dataout_buffer/dataout_buf_IP8'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP8/dataout_buf_IP8/dataout_buf_IP8_in_context.xdc] for cell 'net/node8/PE/dataout_buffer/dataout_buf_IP8'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP9/dataout_buf_IP9/dataout_buf_IP9_in_context.xdc] for cell 'net/node9/PE/dataout_buffer/dataout_buf_IP9'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP9/dataout_buf_IP9/dataout_buf_IP9_in_context.xdc] for cell 'net/node9/PE/dataout_buffer/dataout_buf_IP9'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP10/dataout_buf_IP10/dataout_buf_IP10_in_context.xdc] for cell 'net/node10/PE/dataout_buffer/dataout_buf_IP10'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP10/dataout_buf_IP10/dataout_buf_IP10_in_context.xdc] for cell 'net/node10/PE/dataout_buffer/dataout_buf_IP10'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP11/dataout_buf_IP11/dataout_buf_IP11_in_context.xdc] for cell 'net/node11/PE/dataout_buffer/dataout_buf_IP11'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP11/dataout_buf_IP11/dataout_buf_IP11_in_context.xdc] for cell 'net/node11/PE/dataout_buffer/dataout_buf_IP11'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP12/dataout_buf_IP12/dataout_buf_IP12_in_context.xdc] for cell 'net/node12/PE/dataout_buffer/dataout_buf_IP12'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP12/dataout_buf_IP12/dataout_buf_IP12_in_context.xdc] for cell 'net/node12/PE/dataout_buffer/dataout_buf_IP12'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP13/dataout_buf_IP13/dataout_buf_IP13_in_context.xdc] for cell 'net/node13/PE/dataout_buffer/dataout_buf_IP13'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP13/dataout_buf_IP13/dataout_buf_IP13_in_context.xdc] for cell 'net/node13/PE/dataout_buffer/dataout_buf_IP13'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP14/dataout_buf_IP14/dataout_buf_IP14_in_context.xdc] for cell 'net/node14/PE/dataout_buffer/dataout_buf_IP14'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP14/dataout_buf_IP14/dataout_buf_IP14_in_context.xdc] for cell 'net/node14/PE/dataout_buffer/dataout_buf_IP14'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP7/dataout_buf_IP7/dataout_buf_IP7_in_context.xdc] for cell 'net/node7/PE/dataout_buffer/dataout_buf_IP7'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP7/dataout_buf_IP7/dataout_buf_IP7_in_context.xdc] for cell 'net/node7/PE/dataout_buffer/dataout_buf_IP7'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP0/dataout_buf_IP0/dataout_buf_IP0_in_context.xdc] for cell 'net/node0/PE/dataout_buffer/dataout_buf_IP0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/dataout_buf_IP0/dataout_buf_IP0/dataout_buf_IP0_in_context.xdc] for cell 'net/node0/PE/dataout_buffer/dataout_buf_IP0'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/NoC on FPGA/NoC.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Parsing XDC File [C:/Users/DELL/Desktop/NoC on FPGA/design/XDC.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/NoC on FPGA/design/XDC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/DELL/Desktop/NoC on FPGA/design/XDC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Network_FPGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Network_FPGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1024.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1024.559 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ila' at clock pin 'clk' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node0/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node0/PE/dataout_buffer/dataout_buf_IP0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node1/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node1/PE/dataout_buffer/dataout_buf_IP1' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node10/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node10/PE/dataout_buffer/dataout_buf_IP10' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node11/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node11/PE/dataout_buffer/dataout_buf_IP11' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node12/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node12/PE/dataout_buffer/dataout_buf_IP12' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node13/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node13/PE/dataout_buffer/dataout_buf_IP13' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node14/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node14/PE/dataout_buffer/dataout_buf_IP14' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node15/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node15/PE/dataout_buffer/dataout_buf_IP15' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node2/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node2/PE/dataout_buffer/dataout_buf_IP2' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node3/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node3/PE/dataout_buffer/dataout_buf_IP3' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node4/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node4/PE/dataout_buffer/dataout_buf_IP4' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node5/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node5/PE/dataout_buffer/dataout_buf_IP5' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node6/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node6/PE/dataout_buffer/dataout_buf_IP6' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node7/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node7/PE/dataout_buffer/dataout_buf_IP7' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node8/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node8/PE/dataout_buffer/dataout_buf_IP8' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node9/PE/datain_buffer/datain_buf_0' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'net/node9/PE/dataout_buffer/dataout_buf_IP9' at clock pin 'clka' is different from the actual clock period '6.667', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1033.945 ; gain = 458.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1033.945 ; gain = 458.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for net/node0/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node1/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node2/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node3/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node4/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node5/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node6/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node7/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node8/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node9/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node10/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node11/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node12/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node13/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node14/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node15/PE/datain_buffer/datain_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node15/PE/dataout_buffer/dataout_buf_IP15. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node1/PE/dataout_buffer/dataout_buf_IP1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node2/PE/dataout_buffer/dataout_buf_IP2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node3/PE/dataout_buffer/dataout_buf_IP3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node4/PE/dataout_buffer/dataout_buf_IP4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node5/PE/dataout_buffer/dataout_buf_IP5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node6/PE/dataout_buffer/dataout_buf_IP6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node8/PE/dataout_buffer/dataout_buf_IP8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node9/PE/dataout_buffer/dataout_buf_IP9. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node10/PE/dataout_buffer/dataout_buf_IP10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node11/PE/dataout_buffer/dataout_buf_IP11. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node12/PE/dataout_buffer/dataout_buf_IP12. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node13/PE/dataout_buffer/dataout_buf_IP13. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node14/PE/dataout_buffer/dataout_buf_IP14. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node7/PE/dataout_buffer/dataout_buf_IP7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for net/node0/PE/dataout_buffer/dataout_buf_IP0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_wiz. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1033.945 ; gain = 458.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'InputBuffer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              000 |                              000
+                  iSTATE |                              001 |                              001
+                 iSTATE0 |                              010 |                              010
+                 iSTATE3 |                              011 |                              011
+                 iSTATE2 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'InputBuffer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1033.945 ; gain = 458.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Router             |          16|     12902|
+|2     |ProcessorElement0  |           1|       208|
+|3     |ProcessorElement1  |           1|       239|
+|4     |ProcessorElement2  |           1|       239|
+|5     |ProcessorElement3  |           1|       239|
+|6     |ProcessorElement4  |           1|       239|
+|7     |ProcessorElement5  |           1|       239|
+|8     |ProcessorElement6  |           1|       239|
+|9     |ProcessorElement7  |           1|       239|
+|10    |ProcessorElement8  |           1|       239|
+|11    |ProcessorElement9  |           1|       239|
+|12    |ProcessorElement10 |           1|       239|
+|13    |ProcessorElement11 |           1|       239|
+|14    |ProcessorElement12 |           1|       239|
+|15    |ProcessorElement13 |           1|       239|
+|16    |ProcessorElement14 |           1|       239|
+|17    |ProcessorElement15 |           1|       239|
+|18    |Network_FPGA__GC0  |           1|         3|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 32    
+	   2 Input      3 Bit       Adders := 176   
++---Registers : 
+	               23 Bit    Registers := 400   
+	               20 Bit    Registers := 240   
+	                5 Bit    Registers := 32    
+	                3 Bit    Registers := 320   
+	                1 Bit    Registers := 400   
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 640   
+	   5 Input     23 Bit        Muxes := 640   
+	   4 Input     23 Bit        Muxes := 240   
+	   6 Input     20 Bit        Muxes := 80    
+	   2 Input     20 Bit        Muxes := 80    
+	   2 Input      5 Bit        Muxes := 78    
+	   3 Input      3 Bit        Muxes := 64    
+	   2 Input      3 Bit        Muxes := 1776  
+	  11 Input      3 Bit        Muxes := 80    
+	   5 Input      3 Bit        Muxes := 80    
+	   2 Input      2 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 913   
+	   3 Input      1 Bit        Muxes := 111   
+	   6 Input      1 Bit        Muxes := 80    
+	   5 Input      1 Bit        Muxes := 240   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VCAlloc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 16    
+Module SwitchAlloc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 5     
++---Registers : 
+	                3 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 35    
+	   3 Input      1 Bit        Muxes := 5     
+Module Crossbar 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input     20 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 5     
+Module RouteCompute__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+Module RouteCompute__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+Module RouteCompute__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+Module RouteCompute__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+Module RouteCompute 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+Module InputBuffer__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 8     
+	   5 Input     23 Bit        Muxes := 8     
+	   4 Input     23 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 3     
+Module InputBuffer__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 8     
+	   5 Input     23 Bit        Muxes := 8     
+	   4 Input     23 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 3     
+Module InputBuffer__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 8     
+	   5 Input     23 Bit        Muxes := 8     
+	   4 Input     23 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 3     
+Module InputBuffer__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 8     
+	   5 Input     23 Bit        Muxes := 8     
+	   4 Input     23 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 3     
+Module InputBuffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 8     
+	   5 Input     23 Bit        Muxes := 8     
+	   4 Input     23 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 3     
+Module Router 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 5     
+	               20 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 10    
+Module dataout_buf_0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf_0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ProcessorElement0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf__xdcDup__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dataout_buf_15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module datain_buf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProcessorElement15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][4]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][4]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][5]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][5]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][6]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][6]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][7]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][7]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][8]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][8]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][9]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][9]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][10]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][10]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][11]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][11]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][12]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][12]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][13]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][13]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][14]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][14]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][15]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][15]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][16]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][16]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][17]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][17]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][18]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][18]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][19]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][19]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][0]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][1]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][2]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[1][3]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/valid_pipe_reg[1]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][0]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][1]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][2]' (FDC) to 'net/node0/Router_0/in_pipe_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/in_pipe_reg[2][3]' (FDC) to 'net/node0/Router_0/valid_pipe_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node0/Router_0 /\valid_pipe_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node0/Router_0 /\U1[1].RC /\target_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node0/Router_0 /\U1[4].RC /\target_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node0/Router_0 /\U1[3].RC /\target_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node0/Router_0 /\U1[0].RC /\target_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node0/Router_0 /\U1[2].RC /\target_reg[1] )
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[3][1]' (FDC) to 'net/node0/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[1][2]' (FDC) to 'net/node0/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[1][1]' (FDC) to 'net/node0/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[0][1]' (FDC) to 'net/node0/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[1][0]' (FDC) to 'net/node0/Router_0/SA/to_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[2][1]' (FDC) to 'net/node0/Router_0/SA/to_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[2][2]' (FDC) to 'net/node0/Router_0/SA/to_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'net/node0/Router_0/SA/to_reg[4][1]' (FDC) to 'net/node0/Router_0/SA/to_reg[2][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node0/Router_0 /SA/\to_reg[2][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__3.
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][4]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][5]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][6]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][7]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][8]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][9]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][10]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][11]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][12]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][13]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][14]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][15]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][16]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][17]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][18]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][19]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][0]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][1]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][2]' (FDC) to 'net/node1/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/in_pipe_reg[1][3]' (FDC) to 'net/node1/Router_0/valid_pipe_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node1/Router_0 /\valid_pipe_reg[1] )
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/SA/to_reg[1][2]' (FDC) to 'net/node1/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'net/node1/Router_0/SA/to_reg[1][1]' (FDC) to 'net/node1/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node1/Router_0 /SA/\to_reg[1][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__8.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__8.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__8.
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][4]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][5]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][6]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][7]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][8]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][9]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][10]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][11]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][12]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][13]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][14]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][15]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][16]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][17]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][18]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][19]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][0]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][1]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][2]' (FDC) to 'net/node2/Router_0/in_pipe_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/in_pipe_reg[1][3]' (FDC) to 'net/node2/Router_0/valid_pipe_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node2/Router_0 /\valid_pipe_reg[1] )
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/SA/to_reg[1][2]' (FDC) to 'net/node2/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'net/node2/Router_0/SA/to_reg[1][1]' (FDC) to 'net/node2/Router_0/SA/to_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node2/Router_0 /SA/\to_reg[1][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__13.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__13.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__13.
+INFO: [Synth 8-3886] merging instance 'net/node3/Router_0/in_pipe_reg[1][4]' (FDC) to 'net/node3/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node3/Router_0/in_pipe_reg[1][5]' (FDC) to 'net/node3/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node3/Router_0/in_pipe_reg[1][6]' (FDC) to 'net/node3/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node3/Router_0/in_pipe_reg[1][7]' (FDC) to 'net/node3/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node3/Router_0/in_pipe_reg[1][8]' (FDC) to 'net/node3/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node3/Router_0/in_pipe_reg[1][9]' (FDC) to 'net/node3/Router_0/in_pipe_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'net/node3/Router_0/in_pipe_reg[1][10]' (FDC) to 'net/node3/Router_0/in_pipe_reg[1][19]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node3/Router_0 /\valid_pipe_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node3/Router_0 /SA/\to_reg[1][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__18.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__18.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__18.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node12/Router_0 /\valid_pipe_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node12/Router_0 /SA/\to_reg[3][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__61.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__61.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__61.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node13/Router_0 /\valid_pipe_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node13/Router_0 /SA/\to_reg[3][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__66.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__66.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__66.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node14/Router_0 /\valid_pipe_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node14/Router_0 /SA/\to_reg[3][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__71.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__71.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__71.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node15/Router_0 /\valid_pipe_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (net/\node15/Router_0 /SA/\to_reg[3][1] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__79.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__79.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__79.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module InputBuffer__76.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module InputBuffer__76.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module InputBuffer__76.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 1034.535 ; gain = 458.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Router             |           1|      2191|
+|2     |ProcessorElement0  |           1|       126|
+|3     |ProcessorElement1  |           1|       140|
+|4     |ProcessorElement2  |           1|       140|
+|5     |ProcessorElement3  |           1|       140|
+|6     |ProcessorElement4  |           1|       140|
+|7     |ProcessorElement5  |           1|       140|
+|8     |ProcessorElement6  |           1|       140|
+|9     |ProcessorElement7  |           1|       140|
+|10    |ProcessorElement8  |           1|       140|
+|11    |ProcessorElement9  |           1|       140|
+|12    |ProcessorElement10 |           1|       140|
+|13    |ProcessorElement11 |           1|       140|
+|14    |ProcessorElement12 |           1|       140|
+|15    |ProcessorElement13 |           1|       140|
+|16    |ProcessorElement14 |           1|       140|
+|17    |ProcessorElement15 |           1|       140|
+|18    |Network_FPGA__GC0  |           1|         3|
+|19    |Router__1          |           1|      3907|
+|20    |Router__2          |           1|      3907|
+|21    |Router__3          |           1|      3899|
+|22    |Router__4          |           1|      5429|
+|23    |Router__5          |           1|      5439|
+|24    |Router__6          |           1|      5444|
+|25    |Router__7          |           1|      5424|
+|26    |Router__8          |           1|      5429|
+|27    |Router__9          |           1|      5439|
+|28    |Router__10         |           1|      5444|
+|29    |Router__11         |           1|      5424|
+|30    |Router__12         |           1|      3967|
+|31    |Router__13         |           1|      3983|
+|32    |Router__14         |           1|      3979|
+|33    |Router__15         |           1|      2768|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz/clk_in1' to pin 'sys_clk_ibufgds/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz/clk_out1' to pin 'clk_wiz/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_wiz/clk_in1' to 'sys_clk_ibufgds/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1084.418 ; gain = 508.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:21 . Memory (MB): peak = 1140.891 ; gain = 565.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Router             |           1|      2191|
+|2     |ProcessorElement0  |           1|       126|
+|3     |ProcessorElement1  |           1|       140|
+|4     |ProcessorElement2  |           1|       140|
+|5     |ProcessorElement3  |           1|       140|
+|6     |ProcessorElement4  |           1|       140|
+|7     |ProcessorElement5  |           1|       140|
+|8     |ProcessorElement6  |           1|       140|
+|9     |ProcessorElement7  |           1|       140|
+|10    |ProcessorElement8  |           1|       140|
+|11    |ProcessorElement9  |           1|       140|
+|12    |ProcessorElement10 |           1|       140|
+|13    |ProcessorElement11 |           1|       140|
+|14    |ProcessorElement12 |           1|       140|
+|15    |ProcessorElement13 |           1|       140|
+|16    |ProcessorElement14 |           1|       140|
+|17    |ProcessorElement15 |           1|       140|
+|18    |Network_FPGA__GC0  |           1|         3|
+|19    |Router__1          |           1|      3907|
+|20    |Router__2          |           1|      3907|
+|21    |Router__3          |           1|      3899|
+|22    |Router__4          |           1|      5429|
+|23    |Router__5          |           1|      5439|
+|24    |Router__6          |           1|      5444|
+|25    |Router__7          |           1|      5424|
+|26    |Router__8          |           1|      5429|
+|27    |Router__9          |           1|      5439|
+|28    |Router__10         |           1|      5444|
+|29    |Router__11         |           1|      5424|
+|30    |Router__12         |           1|      3967|
+|31    |Router__13         |           1|      3983|
+|32    |Router__14         |           1|      3979|
+|33    |Router__15         |           1|      2768|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |datain_buf_IP    |        16|
+|2     |dataout_buf_IP0  |         1|
+|3     |dataout_buf_IP1  |         1|
+|4     |dataout_buf_IP10 |         1|
+|5     |dataout_buf_IP11 |         1|
+|6     |dataout_buf_IP12 |         1|
+|7     |dataout_buf_IP13 |         1|
+|8     |dataout_buf_IP14 |         1|
+|9     |dataout_buf_IP15 |         1|
+|10    |dataout_buf_IP2  |         1|
+|11    |dataout_buf_IP3  |         1|
+|12    |dataout_buf_IP4  |         1|
+|13    |dataout_buf_IP5  |         1|
+|14    |dataout_buf_IP6  |         1|
+|15    |dataout_buf_IP7  |         1|
+|16    |dataout_buf_IP8  |         1|
+|17    |dataout_buf_IP9  |         1|
+|18    |clk_wiz_0        |         1|
+|19    |ila_0            |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |clk_wiz_0         |     1|
+|2     |datain_buf_IP     |     1|
+|3     |datain_buf_IP__16 |     1|
+|4     |datain_buf_IP__17 |     1|
+|5     |datain_buf_IP__18 |     1|
+|6     |datain_buf_IP__19 |     1|
+|7     |datain_buf_IP__20 |     1|
+|8     |datain_buf_IP__21 |     1|
+|9     |datain_buf_IP__22 |     1|
+|10    |datain_buf_IP__23 |     1|
+|11    |datain_buf_IP__24 |     1|
+|12    |datain_buf_IP__25 |     1|
+|13    |datain_buf_IP__26 |     1|
+|14    |datain_buf_IP__27 |     1|
+|15    |datain_buf_IP__28 |     1|
+|16    |datain_buf_IP__29 |     1|
+|17    |datain_buf_IP__30 |     1|
+|18    |dataout_buf_IP0   |     1|
+|19    |dataout_buf_IP1   |     1|
+|20    |dataout_buf_IP10  |     1|
+|21    |dataout_buf_IP11  |     1|
+|22    |dataout_buf_IP12  |     1|
+|23    |dataout_buf_IP13  |     1|
+|24    |dataout_buf_IP14  |     1|
+|25    |dataout_buf_IP15  |     1|
+|26    |dataout_buf_IP2   |     1|
+|27    |dataout_buf_IP3   |     1|
+|28    |dataout_buf_IP4   |     1|
+|29    |dataout_buf_IP5   |     1|
+|30    |dataout_buf_IP6   |     1|
+|31    |dataout_buf_IP7   |     1|
+|32    |dataout_buf_IP8   |     1|
+|33    |dataout_buf_IP9   |     1|
+|34    |ila_0             |     1|
+|35    |LUT1              |    18|
+|36    |LUT2              |  1727|
+|37    |LUT3              |   498|
+|38    |LUT4              |  6458|
+|39    |LUT5              |  2792|
+|40    |LUT6              |  5316|
+|41    |FDCE              | 13761|
+|42    |FDPE              |    70|
+|43    |IBUF              |     1|
+|44    |IBUFDS            |     1|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-----------------------+-----------------------+------+
+|      |Instance               |Module                 |Cells |
++------+-----------------------+-----------------------+------+
+|1     |top                    |                       | 31284|
+|2     |  net                  |Network                | 31279|
+|3     |    node0              |Node0                  |  1171|
+|4     |      PE               |ProcessorElement0      |    79|
+|5     |        datain_buffer  |datain_buf_0           |    30|
+|6     |        dataout_buffer |dataout_buf_0          |    29|
+|7     |      Router_0         |Router_188             |  1092|
+|8     |        SA             |SwitchAlloc_189        |    28|
+|9     |        ST             |Crossbar_190           |    63|
+|10    |        \U1[0].RC      |RouteCompute_191       |    23|
+|11    |        \U1[3].RC      |RouteCompute_192       |    23|
+|12    |        \U1[4].RC      |RouteCompute_193       |    23|
+|13    |        \U2[0].IB      |InputBuffer_194        |   217|
+|14    |        \U2[3].IB      |InputBuffer_195        |   204|
+|15    |        \U2[4].IB      |InputBuffer_196        |   201|
+|16    |        VCA            |VCAlloc_197            |    86|
+|17    |    node1              |Node1                  |  1797|
+|18    |      PE               |ProcessorElement1      |    79|
+|19    |        datain_buffer  |datain_buf__xdcDup__1  |    32|
+|20    |        dataout_buffer |dataout_buf_1          |    29|
+|21    |      Router_0         |Router_176             |  1718|
+|22    |        SA             |SwitchAlloc_177        |   359|
+|23    |        ST             |Crossbar_178           |    84|
+|24    |        \U1[0].RC      |RouteCompute_179       |    27|
+|25    |        \U1[2].RC      |RouteCompute_180       |    27|
+|26    |        \U1[3].RC      |RouteCompute_181       |    27|
+|27    |        \U1[4].RC      |RouteCompute_182       |    27|
+|28    |        \U2[0].IB      |InputBuffer_183        |   202|
+|29    |        \U2[2].IB      |InputBuffer_184        |   201|
+|30    |        \U2[3].IB      |InputBuffer_185        |   201|
+|31    |        \U2[4].IB      |InputBuffer_186        |   201|
+|32    |        VCA            |VCAlloc_187            |    33|
+|33    |    node10             |Node10                 |  2254|
+|34    |      PE               |ProcessorElement10     |    79|
+|35    |        datain_buffer  |datain_buf__xdcDup__10 |    32|
+|36    |        dataout_buffer |dataout_buf_10         |    29|
+|37    |      Router_0         |Router_162             |  2175|
+|38    |        SA             |SwitchAlloc_163        |   406|
+|39    |        ST             |Crossbar_164           |   105|
+|40    |        \U1[0].RC      |RouteCompute_165       |    27|
+|41    |        \U1[1].RC      |RouteCompute_166       |    27|
+|42    |        \U1[2].RC      |RouteCompute_167       |    27|
+|43    |        \U1[3].RC      |RouteCompute_168       |    27|
+|44    |        \U1[4].RC      |RouteCompute_169       |    27|
+|45    |        \U2[0].IB      |InputBuffer_170        |   199|
+|46    |        \U2[1].IB      |InputBuffer_171        |   199|
+|47    |        \U2[2].IB      |InputBuffer_172        |   199|
+|48    |        \U2[3].IB      |InputBuffer_173        |   200|
+|49    |        \U2[4].IB      |InputBuffer_174        |   199|
+|50    |        VCA            |VCAlloc_175            |    31|
+|51    |    node11             |Node11                 |  2255|
+|52    |      PE               |ProcessorElement11     |    79|
+|53    |        datain_buffer  |datain_buf__xdcDup__11 |    32|
+|54    |        dataout_buffer |dataout_buf_11         |    29|
+|55    |      Router_0         |Router_148             |  2176|
+|56    |        SA             |SwitchAlloc_149        |   406|
+|57    |        ST             |Crossbar_150           |   106|
+|58    |        \U1[0].RC      |RouteCompute_151       |    26|
+|59    |        \U1[1].RC      |RouteCompute_152       |    26|
+|60    |        \U1[2].RC      |RouteCompute_153       |    26|
+|61    |        \U1[3].RC      |RouteCompute_154       |    26|
+|62    |        \U1[4].RC      |RouteCompute_155       |    26|
+|63    |        \U2[0].IB      |InputBuffer_156        |   199|
+|64    |        \U2[1].IB      |InputBuffer_157        |   199|
+|65    |        \U2[2].IB      |InputBuffer_158        |   199|
+|66    |        \U2[3].IB      |InputBuffer_159        |   200|
+|67    |        \U2[4].IB      |InputBuffer_160        |   199|
+|68    |        VCA            |VCAlloc_161            |    31|
+|69    |    node12             |Node12                 |  1798|
+|70    |      PE               |ProcessorElement12     |    79|
+|71    |        datain_buffer  |datain_buf__xdcDup__12 |    32|
+|72    |        dataout_buffer |dataout_buf_12         |    29|
+|73    |      Router_0         |Router_136             |  1719|
+|74    |        SA             |SwitchAlloc_137        |   352|
+|75    |        ST             |Crossbar_138           |    84|
+|76    |        \U1[0].RC      |RouteCompute_139       |    26|
+|77    |        \U1[1].RC      |RouteCompute_140       |    26|
+|78    |        \U1[2].RC      |RouteCompute_141       |    26|
+|79    |        \U1[4].RC      |RouteCompute_142       |    26|
+|80    |        \U2[0].IB      |InputBuffer_143        |   201|
+|81    |        \U2[1].IB      |InputBuffer_144        |   201|
+|82    |        \U2[2].IB      |InputBuffer_145        |   202|
+|83    |        \U2[4].IB      |InputBuffer_146        |   201|
+|84    |        VCA            |VCAlloc_147            |    33|
+|85    |    node13             |Node13                 |  1798|
+|86    |      PE               |ProcessorElement13     |    79|
+|87    |        datain_buffer  |datain_buf__xdcDup__13 |    32|
+|88    |        dataout_buffer |dataout_buf_13         |    29|
+|89    |      Router_0         |Router_124             |  1719|
+|90    |        SA             |SwitchAlloc_125        |   352|
+|91    |        ST             |Crossbar_126           |    84|
+|92    |        \U1[0].RC      |RouteCompute_127       |    27|
+|93    |        \U1[1].RC      |RouteCompute_128       |    27|
+|94    |        \U1[2].RC      |RouteCompute_129       |    27|
+|95    |        \U1[4].RC      |RouteCompute_130       |    27|
+|96    |        \U2[0].IB      |InputBuffer_131        |   201|
+|97    |        \U2[1].IB      |InputBuffer_132        |   201|
+|98    |        \U2[2].IB      |InputBuffer_133        |   202|
+|99    |        \U2[4].IB      |InputBuffer_134        |   201|
+|100   |        VCA            |VCAlloc_135            |    33|
+|101   |    node14             |Node14                 |  1798|
+|102   |      PE               |ProcessorElement14     |    79|
+|103   |        datain_buffer  |datain_buf__xdcDup__14 |    32|
+|104   |        dataout_buffer |dataout_buf_14         |    29|
+|105   |      Router_0         |Router_112             |  1719|
+|106   |        SA             |SwitchAlloc_113        |   352|
+|107   |        ST             |Crossbar_114           |    84|
+|108   |        \U1[0].RC      |RouteCompute_115       |    27|
+|109   |        \U1[1].RC      |RouteCompute_116       |    27|
+|110   |        \U1[2].RC      |RouteCompute_117       |    27|
+|111   |        \U1[4].RC      |RouteCompute_118       |    27|
+|112   |        \U2[0].IB      |InputBuffer_119        |   201|
+|113   |        \U2[1].IB      |InputBuffer_120        |   201|
+|114   |        \U2[2].IB      |InputBuffer_121        |   202|
+|115   |        \U2[4].IB      |InputBuffer_122        |   201|
+|116   |        VCA            |VCAlloc_123            |    33|
+|117   |    node15             |Node15                 |  1290|
+|118   |      PE               |ProcessorElement15     |    79|
+|119   |        datain_buffer  |datain_buf             |    32|
+|120   |        dataout_buffer |dataout_buf_15         |    29|
+|121   |      Router_0         |Router_102             |  1211|
+|122   |        SA             |SwitchAlloc_103        |   178|
+|123   |        ST             |Crossbar_104           |    63|
+|124   |        \U1[1].RC      |RouteCompute_105       |    26|
+|125   |        \U1[2].RC      |RouteCompute_106       |    26|
+|126   |        \U1[4].RC      |RouteCompute_107       |    26|
+|127   |        \U2[1].IB      |InputBuffer_108        |   199|
+|128   |        \U2[2].IB      |InputBuffer_109        |   200|
+|129   |        \U2[4].IB      |InputBuffer_110        |   199|
+|130   |        VCA            |VCAlloc_111            |    29|
+|131   |    node2              |Node2                  |  1797|
+|132   |      PE               |ProcessorElement2      |    79|
+|133   |        datain_buffer  |datain_buf__xdcDup__2  |    32|
+|134   |        dataout_buffer |dataout_buf_2          |    29|
+|135   |      Router_0         |Router_90              |  1718|
+|136   |        SA             |SwitchAlloc_91         |   359|
+|137   |        ST             |Crossbar_92            |    84|
+|138   |        \U1[0].RC      |RouteCompute_93        |    25|
+|139   |        \U1[2].RC      |RouteCompute_94        |    25|
+|140   |        \U1[3].RC      |RouteCompute_95        |    25|
+|141   |        \U1[4].RC      |RouteCompute_96        |    25|
+|142   |        \U2[0].IB      |InputBuffer_97         |   202|
+|143   |        \U2[2].IB      |InputBuffer_98         |   201|
+|144   |        \U2[3].IB      |InputBuffer_99         |   201|
+|145   |        \U2[4].IB      |InputBuffer_100        |   201|
+|146   |        VCA            |VCAlloc_101            |    33|
+|147   |    node3              |Node3                  |  1797|
+|148   |      PE               |ProcessorElement3      |    79|
+|149   |        datain_buffer  |datain_buf__xdcDup__3  |    32|
+|150   |        dataout_buffer |dataout_buf_3          |    29|
+|151   |      Router_0         |Router_78              |  1718|
+|152   |        SA             |SwitchAlloc_79         |   359|
+|153   |        ST             |Crossbar_80            |    84|
+|154   |        \U1[0].RC      |RouteCompute_81        |    26|
+|155   |        \U1[2].RC      |RouteCompute_82        |    26|
+|156   |        \U1[3].RC      |RouteCompute_83        |    26|
+|157   |        \U1[4].RC      |RouteCompute_84        |    26|
+|158   |        \U2[0].IB      |InputBuffer_85         |   202|
+|159   |        \U2[2].IB      |InputBuffer_86         |   201|
+|160   |        \U2[3].IB      |InputBuffer_87         |   201|
+|161   |        \U2[4].IB      |InputBuffer_88         |   201|
+|162   |        VCA            |VCAlloc_89             |    33|
+|163   |    node4              |Node4                  |  2254|
+|164   |      PE               |ProcessorElement4      |    79|
+|165   |        datain_buffer  |datain_buf__xdcDup__4  |    32|
+|166   |        dataout_buffer |dataout_buf_4          |    29|
+|167   |      Router_0         |Router_64              |  2175|
+|168   |        SA             |SwitchAlloc_65         |   406|
+|169   |        ST             |Crossbar_66            |   105|
+|170   |        \U1[0].RC      |RouteCompute_67        |    27|
+|171   |        \U1[1].RC      |RouteCompute_68        |    27|
+|172   |        \U1[2].RC      |RouteCompute_69        |    27|
+|173   |        \U1[3].RC      |RouteCompute_70        |    27|
+|174   |        \U1[4].RC      |RouteCompute_71        |    27|
+|175   |        \U2[0].IB      |InputBuffer_72         |   199|
+|176   |        \U2[1].IB      |InputBuffer_73         |   199|
+|177   |        \U2[2].IB      |InputBuffer_74         |   199|
+|178   |        \U2[3].IB      |InputBuffer_75         |   200|
+|179   |        \U2[4].IB      |InputBuffer_76         |   199|
+|180   |        VCA            |VCAlloc_77             |    31|
+|181   |    node5              |Node5                  |  2254|
+|182   |      PE               |ProcessorElement5      |    79|
+|183   |        datain_buffer  |datain_buf__xdcDup__5  |    32|
+|184   |        dataout_buffer |dataout_buf_5          |    29|
+|185   |      Router_0         |Router_50              |  2175|
+|186   |        SA             |SwitchAlloc_51         |   406|
+|187   |        ST             |Crossbar_52            |   105|
+|188   |        \U1[0].RC      |RouteCompute_53        |    27|
+|189   |        \U1[1].RC      |RouteCompute_54        |    27|
+|190   |        \U1[2].RC      |RouteCompute_55        |    27|
+|191   |        \U1[3].RC      |RouteCompute_56        |    27|
+|192   |        \U1[4].RC      |RouteCompute_57        |    27|
+|193   |        \U2[0].IB      |InputBuffer_58         |   199|
+|194   |        \U2[1].IB      |InputBuffer_59         |   199|
+|195   |        \U2[2].IB      |InputBuffer_60         |   199|
+|196   |        \U2[3].IB      |InputBuffer_61         |   200|
+|197   |        \U2[4].IB      |InputBuffer_62         |   199|
+|198   |        VCA            |VCAlloc_63             |    31|
+|199   |    node6              |Node6                  |  2254|
+|200   |      PE               |ProcessorElement6      |    79|
+|201   |        datain_buffer  |datain_buf__xdcDup__6  |    32|
+|202   |        dataout_buffer |dataout_buf_6          |    29|
+|203   |      Router_0         |Router_36              |  2175|
+|204   |        SA             |SwitchAlloc_37         |   406|
+|205   |        ST             |Crossbar_38            |   105|
+|206   |        \U1[0].RC      |RouteCompute_39        |    27|
+|207   |        \U1[1].RC      |RouteCompute_40        |    27|
+|208   |        \U1[2].RC      |RouteCompute_41        |    27|
+|209   |        \U1[3].RC      |RouteCompute_42        |    27|
+|210   |        \U1[4].RC      |RouteCompute_43        |    27|
+|211   |        \U2[0].IB      |InputBuffer_44         |   199|
+|212   |        \U2[1].IB      |InputBuffer_45         |   199|
+|213   |        \U2[2].IB      |InputBuffer_46         |   199|
+|214   |        \U2[3].IB      |InputBuffer_47         |   200|
+|215   |        \U2[4].IB      |InputBuffer_48         |   199|
+|216   |        VCA            |VCAlloc_49             |    31|
+|217   |    node7              |Node7                  |  2254|
+|218   |      PE               |ProcessorElement7      |    79|
+|219   |        datain_buffer  |datain_buf__xdcDup__7  |    32|
+|220   |        dataout_buffer |dataout_buf_7          |    29|
+|221   |      Router_0         |Router_22              |  2175|
+|222   |        SA             |SwitchAlloc_23         |   406|
+|223   |        ST             |Crossbar_24            |   105|
+|224   |        \U1[0].RC      |RouteCompute_25        |    26|
+|225   |        \U1[1].RC      |RouteCompute_26        |    26|
+|226   |        \U1[2].RC      |RouteCompute_27        |    26|
+|227   |        \U1[3].RC      |RouteCompute_28        |    26|
+|228   |        \U1[4].RC      |RouteCompute_29        |    26|
+|229   |        \U2[0].IB      |InputBuffer_30         |   199|
+|230   |        \U2[1].IB      |InputBuffer_31         |   199|
+|231   |        \U2[2].IB      |InputBuffer_32         |   199|
+|232   |        \U2[3].IB      |InputBuffer_33         |   200|
+|233   |        \U2[4].IB      |InputBuffer_34         |   199|
+|234   |        VCA            |VCAlloc_35             |    31|
+|235   |    node8              |Node8                  |  2254|
+|236   |      PE               |ProcessorElement8      |    79|
+|237   |        datain_buffer  |datain_buf__xdcDup__8  |    32|
+|238   |        dataout_buffer |dataout_buf_8          |    29|
+|239   |      Router_0         |Router_8               |  2175|
+|240   |        SA             |SwitchAlloc_9          |   406|
+|241   |        ST             |Crossbar_10            |   105|
+|242   |        \U1[0].RC      |RouteCompute_11        |    25|
+|243   |        \U1[1].RC      |RouteCompute_12        |    25|
+|244   |        \U1[2].RC      |RouteCompute_13        |    25|
+|245   |        \U1[3].RC      |RouteCompute_14        |    25|
+|246   |        \U1[4].RC      |RouteCompute_15        |    25|
+|247   |        \U2[0].IB      |InputBuffer_16         |   199|
+|248   |        \U2[1].IB      |InputBuffer_17         |   199|
+|249   |        \U2[2].IB      |InputBuffer_18         |   199|
+|250   |        \U2[3].IB      |InputBuffer_19         |   200|
+|251   |        \U2[4].IB      |InputBuffer_20         |   199|
+|252   |        VCA            |VCAlloc_21             |    31|
+|253   |    node9              |Node9                  |  2254|
+|254   |      PE               |ProcessorElement9      |    79|
+|255   |        datain_buffer  |datain_buf__xdcDup__9  |    32|
+|256   |        dataout_buffer |dataout_buf_9          |    29|
+|257   |      Router_0         |Router                 |  2175|
+|258   |        SA             |SwitchAlloc            |   406|
+|259   |        ST             |Crossbar               |   105|
+|260   |        \U1[0].RC      |RouteCompute           |    27|
+|261   |        \U1[1].RC      |RouteCompute_0         |    27|
+|262   |        \U1[2].RC      |RouteCompute_1         |    27|
+|263   |        \U1[3].RC      |RouteCompute_2         |    27|
+|264   |        \U1[4].RC      |RouteCompute_3         |    27|
+|265   |        \U2[0].IB      |InputBuffer            |   199|
+|266   |        \U2[1].IB      |InputBuffer_4          |   199|
+|267   |        \U2[2].IB      |InputBuffer_5          |   199|
+|268   |        \U2[3].IB      |InputBuffer_6          |   200|
+|269   |        \U2[4].IB      |InputBuffer_7          |   199|
+|270   |        VCA            |VCAlloc                |    31|
++------+-----------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.051 ; gain = 584.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 1160.051 ; gain = 372.027
+Synthesis Optimization Complete : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.051 ; gain = 584.465
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1168.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+304 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 1168.879 ; gain = 857.605
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1168.879 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/NoC on FPGA/NoC.runs/synth_1/Network_FPGA.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Network_FPGA_utilization_synth.rpt -pb Network_FPGA_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  7 19:06:38 2022...

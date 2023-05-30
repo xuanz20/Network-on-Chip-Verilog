@@ -1,0 +1,84 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../NoC.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../NoC.srcs/sources_1/ip/datain_buf_IP/sim/datain_buf_IP.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP15/sim/dataout_buf_IP15.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP14/sim/dataout_buf_IP14.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP13/sim/dataout_buf_IP13.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP12/sim/dataout_buf_IP12.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP11/sim/dataout_buf_IP11.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP10/sim/dataout_buf_IP10.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP9/sim/dataout_buf_IP9.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP8/sim/dataout_buf_IP8.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP7/sim/dataout_buf_IP7.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP6/sim/dataout_buf_IP6.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP5/sim/dataout_buf_IP5.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP4/sim/dataout_buf_IP4.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP3/sim/dataout_buf_IP3.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP2/sim/dataout_buf_IP2.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP1/sim/dataout_buf_IP1.v" \
+"../../../../NoC.srcs/sources_1/ip/dataout_buf_IP0/sim/dataout_buf_IP0.v" \
+"../../../../design/Control.v" \
+"../../../../design/Crossbar.v" \
+"../../../../design/InputBuffer.v" \
+"../../../../design/Network.v" \
+"../../../../design/Node/Node0.v" \
+"../../../../design/Node/Node1.v" \
+"../../../../design/Node/Node10.v" \
+"../../../../design/Node/Node11.v" \
+"../../../../design/Node/Node12.v" \
+"../../../../design/Node/Node13.v" \
+"../../../../design/Node/Node14.v" \
+"../../../../design/Node/Node15.v" \
+"../../../../design/Node/Node2.v" \
+"../../../../design/Node/Node3.v" \
+"../../../../design/Node/Node4.v" \
+"../../../../design/Node/Node5.v" \
+"../../../../design/Node/Node6.v" \
+"../../../../design/Node/Node7.v" \
+"../../../../design/Node/Node8.v" \
+"../../../../design/Node/Node9.v" \
+"../../../../design/ProcessorElement/ProcessorElement0.v" \
+"../../../../design/ProcessorElement/ProcessorElement1.v" \
+"../../../../design/ProcessorElement/ProcessorElement10.v" \
+"../../../../design/ProcessorElement/ProcessorElement11.v" \
+"../../../../design/ProcessorElement/ProcessorElement12.v" \
+"../../../../design/ProcessorElement/ProcessorElement13.v" \
+"../../../../design/ProcessorElement/ProcessorElement14.v" \
+"../../../../design/ProcessorElement/ProcessorElement15.v" \
+"../../../../design/ProcessorElement/ProcessorElement2.v" \
+"../../../../design/ProcessorElement/ProcessorElement3.v" \
+"../../../../design/ProcessorElement/ProcessorElement4.v" \
+"../../../../design/ProcessorElement/ProcessorElement5.v" \
+"../../../../design/ProcessorElement/ProcessorElement6.v" \
+"../../../../design/ProcessorElement/ProcessorElement7.v" \
+"../../../../design/ProcessorElement/ProcessorElement8.v" \
+"../../../../design/ProcessorElement/ProcessorElement9.v" \
+"../../../../design/RouteCompute.v" \
+"../../../../design/Router.v" \
+"../../../../design/SwitchAlloc.v" \
+"../../../../design/VCAlloc.v" \
+"../../../../design/datain_buf.v" \
+"../../../../design/datain_buf_0.v" \
+"../../../../design/dataout_buf/dataout_buf_0.v" \
+"../../../../design/dataout_buf/dataout_buf_1.v" \
+"../../../../design/dataout_buf/dataout_buf_10.v" \
+"../../../../design/dataout_buf/dataout_buf_11.v" \
+"../../../../design/dataout_buf/dataout_buf_12.v" \
+"../../../../design/dataout_buf/dataout_buf_13.v" \
+"../../../../design/dataout_buf/dataout_buf_14.v" \
+"../../../../design/dataout_buf/dataout_buf_15.v" \
+"../../../../design/dataout_buf/dataout_buf_2.v" \
+"../../../../design/dataout_buf/dataout_buf_3.v" \
+"../../../../design/dataout_buf/dataout_buf_4.v" \
+"../../../../design/dataout_buf/dataout_buf_5.v" \
+"../../../../design/dataout_buf/dataout_buf_6.v" \
+"../../../../design/dataout_buf/dataout_buf_7.v" \
+"../../../../design/dataout_buf/dataout_buf_8.v" \
+"../../../../design/dataout_buf/dataout_buf_9.v" \
+"../../../../testbench/Network_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
